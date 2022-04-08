@@ -1,0 +1,5 @@
+commemt trên 1 dòng : // nội_dung_comment
+commemt nhiều dòng, 1 khối: /* nội_dung_comment */
+hoặc /*
+        nội_dung_comment
+     */

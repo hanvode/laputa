@@ -1,0 +1,25 @@
+for (var i = 1; i<10 ; i++ ){
+    //code
+} 
+var myInfor = {
+    name: 'Tran Hieu',
+    age: 23,
+    job: 'student'
+}
+for (var key in myInfor) { //lấy key 1 mảng
+    console.log(myInfor[key])
+}
+var animals = [
+    'dog','cat','bird'
+]
+for (var value of animals){ //lấy value 1 mảng
+    console.log(value)
+}
+var i =0
+while (i<100){
+    console.log(i)
+    i++;
+}
+do {
+    //code
+} while (i<10) ;

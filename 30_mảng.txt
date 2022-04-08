@@ -1,0 +1,44 @@
+var animals = [
+    'dog',
+    'cat',
+    'pig',
+    'rat'
+]
+các method: 
+arr.length = số ptu mảng
+1. To string
+2. Join : cũng biến 1 mảng thành 1 chuỗi nhưng thêm kí tự ngăn giữa các chuỗi nếu truyền vào, trả về chuỗi rỗng nếu length =0
+3. Pop :lấy và trả về phần tử cuối ( nếu mảng ko có ptu thì trả về undefined)
+4. Push: thêm ptu vao cuoi mảng và trả về số ptu cua mảng
+5. Shift: như pop nhưng là ptu đầu mảng
+6. Unshift : như push nhưng đầu mảng 
+7. Splicing: xóa, cắt,chèn
+xóa: arr.splice(index_start, So_luong_xoa)
+thay thế:  arr.splice(index_thay_thế, 1, obj_thay_thế)
+chèn: arr.splice(index_chèn, 0, obj_cần_chèn)
+8. Concat: nối 2 mảng arr.concat(arr2) , ko thay đổi mảng ban đầu
+9. Slicing : cắt lát mảng
+arr.slice(1,2) = arr[1]
+Cac phuong thuc co tham so dau vao la function:
+10. forEach() : duyệt từng thành phần trong mảng , ko có trả về undefined
+11. every() : trả về boolean, kiểm tra mỗi thành phần thỏa mãn điều kiện ko
+12. some() : giống every nhưng chỉ cần 1 thành phần thỏa mãn đk là true
+13. find() : tìm kiếm , trả về phàn tử đầu tiên cần tìm, ko có trả về undefined , ko thay đổi mảng ban đầu
+14. filter() : giống find trả về mảng các phần tử cần tìm, ko có trả về mảng rỗng và ko thay đổi mảng ban đầu
+15. map() : tạo mảng mới với kết quả từ thực thi hàm lên từng phần tử mảng ban đầu, ko làm thay đổi mảng ban đầu
+16. reduce() : tạo giá trị mới là tổng của giá trị tạo ra từ ánh xạ hàm vào từng phần tử của mảng được ánh xạ
+//code hàm reduce2:
+Array.prototype.reduce2 = function(callback, result){
+    var i=0
+    if (arguments.length<2){
+        i = 1
+        result =this[0]
+    }
+    for (;i<this.length;i++){
+        result = callback(result, this[i], i , this)
+    }
+    return result
+}
+17. indexOf() : trả về giá trị index đầu tiên nếu tồn tại, ko thì trả về -1
+18. includes() : trả về boolean kiểm tra xem phần tử có tồn tại trong mảng hay không
+

@@ -1,0 +1,18 @@
+tạo hàm: function fcName(){//code}
+gọi hàm: fcName() 
+đối tượng Arguments: chỉ xuất hiện trong function
+vòng lặp for of kết hợp Arguments:
+function writeLog(){
+    for (var param of Arguments){
+        console.log(param)
+    }
+}
+writeLog('a',1,name)
+// Arguments sẽ tạo 1 mảng tham số truyền vào là : ['a',1,name]
+return: nếu hàm ko có return thì sẽ trả về undefined
+các loại function:
++ declaration func: function bình thường
++ Expression func: vd: var showMss = function(){}
+hoặc setTimeout(function(){} )
+nghĩa là có thể ko đặt tên cho Expression func
+declaration func có thể gọi trước khi định nghĩa còn Expression func thì ko

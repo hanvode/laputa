@@ -1,0 +1,23 @@
+1. length : độ dài 1 chuỗi
+myString.length
+2. Find index
+myString.indexOf('JS') (vị trí JS đầu tiên trong chuỗi)
+nếu muốn tìm xâu thứ 2, ta dùng
+indexOf('JS' , vi_tri_bat_dau)  với vị trí bắt đầu là sau vị trí JS đầu tiên
+nếu muốn chọn vị trí của JS cuối thì dùng lastIndexOf
+ngoài ra có search hỗ trợ trong biểu thức chính quy nhưng ko có tham số thứ 2
+3. Cut string: cắt một chuỗi con
+myString.slice(4,6)  //4 :start , 6 :end
+4.replace : ghi đè
+myString.replace('JS' , 'Java')  //thay JS bởi Java
+nếu có nhiều JS mà muốn thay hết, ta dùng biếu thức chính quy
+như sau: myString.replace(/JS/g, 'java')
+5. chữ hoa myString.toUpperCase()
+6. chữ thường myString.toLowerCase()
+7. Trim: xóa kí tự space 2 đầu
+myString.trim()
+8.split : tách 1 chuỗi thành 1 array
+myString.split(', ')   // cần tìm điểm chung để tách
+9. lấy một kí tự theo chỉ số
+myString.charAt(index)
+hoặc myString[index]

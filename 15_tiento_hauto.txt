@@ -1,0 +1,9 @@
+tiền tố: 1. cộng/ trừ cho biến
+         2. trả về biến sau khi cộng/ trừ
+hậu tố:  Vd: output = a++
+         1. tạo ra a_copy = a 
+         2. a = a+1
+         3. trả về output = a_copy (= a trước khi tăng)
+
+         * không có mức độ ưu tiên giữa tiền tố và hậu tố
+         tức là thực hiện từ trái sáng phải

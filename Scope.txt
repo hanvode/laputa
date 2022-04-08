@@ -1,0 +1,4 @@
+Scope là phạm vi sống của 1 biến : 
+khai báo bằng var thì sống trong block function
+còn khai báo bằng let thì chỉ sống trong  block {} gần nó nhất
+nên dùng let để tránh nhầm lẫn

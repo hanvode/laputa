@@ -1,0 +1,9 @@
+Math object:
+1. math.PI
+2. math.round(): lam tron so
+3. math.abs()
+4. math.ceil() : lam tron len
+5. math.floor() : lam tron xuong
+6. math.random(): ngau nhien tra ve so thap phan 0 < r <1
+7. math.min()
+8. math.max()

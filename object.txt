@@ -1,0 +1,6 @@
+khởi tạo 1 object là khởi tạo 1 vùng nhớ mới
+vd : var proName = {
+    name: 'Duong'
+}
+Neu 2 object khoi tao riêng biệt thì sẽ khác nhau dù cùng giá trị
+tương tự với array. Bằng nhau khi gán arr2 = arr1

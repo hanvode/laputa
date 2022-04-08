@@ -1,0 +1,86 @@
+viết lại hàm forEach, reduce, find, filter, some, every
+1. forEach:
+Array.prototype.forEach2 = function(callback){
+    var result = []
+ //   for (var i=0; i <this.length;i++){
+ //     result.push(callback(this[i]))
+ //   }
+    for (var ptu in this){
+        result.push(callback(ptu))
+    }
+}
+//cách đúng:
+Array.prototype.forEach2 = function(callback){
+    for (var index in this){
+        if (this.hasOwnProperty(index)){
+            callback(this[index],index,this)
+        }
+    }
+}
+2. reduce:
+Array.prototype.reduce2 = function(callback,result){
+   
+    var i =0
+    if (arguments.length<2){
+       i = 1
+       result =this[0]
+    }
+    for (; i< this.length ; i++){
+        result = callback(result,this[i],i,this)
+    }
+    return result
+}
+3. find:
+Array.prototype.find2  = function(callback){
+    var result 
+    for (var i = 0;i<this.length;i++){
+        if(callback(this[i])){
+            result = this[i]
+            break
+        } else {
+            continue
+        }
+    }
+    return result
+}
+4. filter:
+Array.prototype.filter2  = function(callback){
+    var result = []
+    for (var index in this){
+        if(this.hasOwnProperty(index)){
+            var kq = callback(this[index],index,this)
+            if(kq){
+                result.push(this[index])
+            }
+        }
+    }
+    return result
+}
+5. every :
+Array.prototype.every2 = function(callback){
+    var result = false
+    for (var index in this){
+        if(this.hasOwnProperty(index)){
+        if (callback(this[index],index,this)){
+            result = true
+        }else {
+            result = false
+            break
+        }
+    }
+    }
+    return result
+}
+6. some :
+ Array.prototype.some2 = function(callback){
+    for (var index in this){
+        if (this.hasOwnProperty(index)){
+            if (callback(this[index],index,this)){
+                return true
+            }
+        }
+    }
+    return false
+}
+
+callback là function được truyền vào theo dạng tham số

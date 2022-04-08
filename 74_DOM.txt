@@ -1,0 +1,28 @@
+DOM là viết tắt của chữ Document Object Model, dịch tạm ra là mô hình các đối tượng trong tài liệu HTML.
+DOM là một cấu trúc dạng cây, cho trình duyệt biết cấu trúc của văn bản, từ đó thể hiện dưới dạng hình ảnh trực quan.
+HTML DOM gồm:
+1.element : ID, class, tag name, CSS selector, HTML collection
+2.attribute
+3.text
+
+các Get element methods:
+1 ID: document.getElementById('id_1')
+2 className: document.getElementsByClassName('cla_name1')
+3 tagName: document.getElementsByTagName('tag_name1')
+4 CSS selector: document.querySelector('.heading')
+                document.querySelectorAll('.heading') -> trả về nodelist tất cả giá trị thỏa mãn
+
+5 HTML collection: 1 số thẻ có, ví dụ thẻ form : document.forms -> trả về HTML collection các form
+    cụ thể muốn truy cập vào từng form: document.forms['id_form']
+    ví dụ thẻ a: document.anchors
+
+attribute node
+* thêm attribute: element.ten_attribute = value_attr  /// setter
+                element.setAttribute('ten_attribute','value_attr')   ///getter - dùng để thêm attribute tự tạo
+* get_value của attribute:   element.getAttribute('ten_attribute')
+ text node
+ *innerText: element.innerText hoặc element.textContent : đưa ra giá trị textNode
+ *textContent: khác innerText ở chỗ lấy text và khoảng trắng xung quanh nếu có. Có thể hiểu theo nghĩa: innerText là chỉ lấy text trong
+ còn textContent là lấy all text, kể cả khoảng trắng
+ innerText in ra những gì thấy trên màn, textContent in ra all text trong textNode
+ innerText chỉ là thuộc tính của elementNode còn textContent có thể để cả textNode sử dụng 

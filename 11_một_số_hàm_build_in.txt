@@ -1,0 +1,11 @@
+Một số hàm built-in:
+1. alert : hiển thị các thông báo, giá trị
+2. Console: các phương thức in trong Console (log,warn,error,... )
+3. Confirm: hiển thị xác nhận
+    confirm('Xac nhan ban du tuoi')
+4. Prompt = alert+confirm
+    prompt('Xac nhan ban du tuoi')
+5. Set timeout
+    setTimeout(function() {alert('thongbao)},1000)
+6. Set interval // chạy nhiều lần sau từng chu kỳ, khác với setTimeout
+    setInterval(function() {alert('thongbao)},1000)

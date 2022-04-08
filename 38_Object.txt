@@ -1,0 +1,19 @@
+khai báo: var obj = { //key: value}
+phương thức : thêm cặp key: values mới
+obj.new_key = new_value
+đưa ra giá trị value:  obj[key] hoặc obj.key
+xóa cặp key_value: delete obj.key
+value có thể nhận function,...
+** object constructor : khơi tạo của đối tượng
+định nghĩa 1 constructor:
+- function Cons_example(keys){
+    this.keys = values
+}
+tạo 1 thể hiện: var user  = new Cons_example(values_of_user);
+prototype là gì: là khuôn, nguyên mẫu
+ví dụ muốn thêm một thuộc tính vào hàm constructor thì ta dùng prototype
+Cons_example.prototype.new_key = new_value
+và các thuộc tính thêm theo cách này sẽ nằm trong__proto__
+**Đối tượng Date:  khởi tạo: var date = new Date()
+các phương thức về thgian : getMonth , getFullYear, ...
+

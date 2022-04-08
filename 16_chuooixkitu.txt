@@ -1,0 +1,21 @@
+var a = 1 + '2'
+kết quả ra chuỗi kí tự. in ra '12'
+var b = 1+2+'4' . in ra '34'
+var c = '3' + 2 + 1 . in ra '321'
+
+1. Tạo chuỗi
+-cách 1: var fullname = 'sonDang'
+-cách 2: var fullName = new String('SonDang')
+nên dùng cách 1 vì typeof cách 2 là 1 object, ko phải string như cách 1
+2. Một số case sử dụng backslash (\)
+dùng để sử dụng lại cặp dấu '' hoặc ""
+bằng cách dùng \'...\' hoặc \"...\"
+* nếu muốn hiển thì dấu \, ta dùng \\ để hiện thị \
+3. xem độ dài chuỗi
+fullName.length  (tính cả dấu cách nhé)
+4. Chú ý độ dài khi code
+ko nên gõ code quá dài, dùng xuống dòng hoặc nối chuỗi
+5. Template String ES6
+thay vì dùng 'toi la ' + str1 + ' ' + str2
+ta có thể dùng
+`toi la ${str1} ${str2}`
